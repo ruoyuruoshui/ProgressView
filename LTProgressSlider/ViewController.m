@@ -30,7 +30,7 @@
     [self.view addSubview:progress];
     m_progress = progress;
     
-    [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(progress) userInfo:nil repeats:YES];
+    [NSTimer scheduledTimerWithTimeInterval:0.5 target:self selector:@selector(progress) userInfo:nil repeats:YES];
     
 }
 
@@ -54,7 +54,7 @@ static CGFloat downP = 0.0f;
 {
     progress = m_progress.progress;
     progress += 0.005;
-    downP += 0.1f;
+    downP += 0.01f;
     
     [m_progress setProgress:progress animated:YES];
     [m_progress setAnotherProgress:downP];

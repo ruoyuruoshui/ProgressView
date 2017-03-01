@@ -15,6 +15,7 @@ static CGFloat const kSliderIconWidth = 50.0f;
 void addRoundRectPathInContext(CGContextRef context, CGRect rect, CGFloat radius)
 {
     CGContextBeginPath(context);
+    
     CGContextMoveToPoint(context, CGRectGetMinX(rect), CGRectGetMidY(rect));
     
     CGContextAddArcToPoint(context, CGRectGetMinX(rect), CGRectGetMinY(rect), CGRectGetMidX(rect), CGRectGetMinY(rect), radius);
@@ -122,6 +123,10 @@ void fillRoundedRectInContext(CGContextRef context, CGRect rect , CGFloat radius
     CGRect drawRect = [self getDrawRect];
     CGFloat radius = 0;
     
+    CGContextAddRect(ctx, drawRect);
+    CGContextSetFillColorWithColor(ctx, [UIColor grayColor].CGColor);
+    CGContextFillPath(ctx);
+    
     if (self.outerBorderColor && self.outerBorderWidth > 0 ) {
         CGFloat hlw = self.outerBorderWidth / 2.0f;
         drawRect = CGRectInset(drawRect, hlw, hlw);
@@ -201,6 +206,7 @@ void fillRoundedRectInContext(CGContextRef context, CGRect rect , CGFloat radius
 
 - (void)awakeFromNib
 {
+    [super awakeFromNib];
     [self defaultInit];
 }
 
@@ -208,11 +214,11 @@ void fillRoundedRectInContext(CGContextRef context, CGRect rect , CGFloat radius
 {
     self.horizontallyInset = 4.0f;
     self.verticalInset = 4.0f;
-    self.outerBorderColor = [UIColor colorWithWhite:1.0f alpha:0.7];
+    self.outerBorderColor = [UIColor colorWithWhite:1.0 alpha:0.7];
     self.outerBorderWidth = 4.0f;
     
     self.trackColor = [UIColor yellowColor];
-    self.anotherTrackColor = [UIColor colorWithWhite:0.9 alpha:0.7];
+    self.anotherTrackColor = [UIColor colorWithWhite:0.9 alpha:0.4];
 }
 
 - (CGFloat)horizontallyInset

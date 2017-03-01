@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		40E993B61E66701A0058A62F /* NSObject+DLIntrospection.m in Sources */ = {isa = PBXBuildFile; fileRef = 40E993B51E66701A0058A62F /* NSObject+DLIntrospection.m */; };
 		461C2D8A1BF9DF2C0018EAB1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 461C2D891BF9DF2C0018EAB1 /* main.m */; };
 		461C2D8D1BF9DF2C0018EAB1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 461C2D8C1BF9DF2C0018EAB1 /* AppDelegate.m */; };
 		461C2D901BF9DF2C0018EAB1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 461C2D8F1BF9DF2C0018EAB1 /* ViewController.m */; };
@@ -36,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		40E993B41E66701A0058A62F /* NSObject+DLIntrospection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+DLIntrospection.h"; sourceTree = "<group>"; };
+		40E993B51E66701A0058A62F /* NSObject+DLIntrospection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+DLIntrospection.m"; sourceTree = "<group>"; };
 		461C2D851BF9DF2C0018EAB1 /* LTProgressSlider.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LTProgressSlider.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		461C2D891BF9DF2C0018EAB1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		461C2D8B1BF9DF2C0018EAB1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -104,6 +107,8 @@
 		461C2D871BF9DF2C0018EAB1 /* LTProgressSlider */ = {
 			isa = PBXGroup;
 			children = (
+				40E993B41E66701A0058A62F /* NSObject+DLIntrospection.h */,
+				40E993B51E66701A0058A62F /* NSObject+DLIntrospection.m */,
 				461C2D8B1BF9DF2C0018EAB1 /* AppDelegate.h */,
 				461C2D8C1BF9DF2C0018EAB1 /* AppDelegate.m */,
 				461C2D8E1BF9DF2C0018EAB1 /* ViewController.h */,
@@ -212,6 +217,7 @@
 				TargetAttributes = {
 					461C2D841BF9DF2C0018EAB1 = {
 						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = NK22HY3LBA;
 					};
 					461C2D9D1BF9DF2C0018EAB1 = {
 						CreatedOnToolsVersion = 7.1;
@@ -279,6 +285,7 @@
 				461C2DBD1BF9DF4B0018EAB1 /* LTProgressSlider.m in Sources */,
 				461C2D8D1BF9DF2C0018EAB1 /* AppDelegate.m in Sources */,
 				461C2D8A1BF9DF2C0018EAB1 /* main.m in Sources */,
+				40E993B61E66701A0058A62F /* NSObject+DLIntrospection.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -417,6 +424,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = NK22HY3LBA;
 				INFOPLIST_FILE = LTProgressSlider/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.letv.leauto.LTProgressSlider;
@@ -428,6 +436,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = NK22HY3LBA;
 				INFOPLIST_FILE = LTProgressSlider/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.letv.leauto.LTProgressSlider;
